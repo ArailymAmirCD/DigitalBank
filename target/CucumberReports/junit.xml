@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="93.017">
+    <testcase classname="Digital Bank Registration Page" name="Positive Case. As a user, I want to successfully create Digital Bank account" time="23.58">
+        <system-out><![CDATA[Given The user with "jack@test.co" is not in DB.............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with following fields.............................passed
+Then User should be displayed with the message "Success Registration Successful. Please Login.".passed
+Then the following user info should be saved in the db......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin I want to make sure users can not register without providing all valid data" time="11.894">
+        <system-out><![CDATA[Given The user with "jack@test.co" is not in DB.............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "title" required field error message "Please select an item in the list.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin I want to make sure users can not register without providing all valid data 2" time="7.084">
+        <system-out><![CDATA[Given The user with "jack@test.co" is not in DB.............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "firstName" required field error message "Please fill out this field.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin I want to make sure users can not register without providing all valid data 3" time="14.335">
+        <system-out><![CDATA[Given The user with "jack@test.co" is not in DB.............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "lastName" required field error message "Please fill out this field.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin I want to make sure users can not register without providing all valid data 4" time="9.756">
+        <system-out><![CDATA[Given The user with "jack@test.co" is not in DB.............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with following fields.............................passed
+Then the User should see the "gender" required field error message "Please select one of these options.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Creating a new checking account" name="Create a standard individual checking account" time="25.969">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class='sufee-alert alert with-close alert-success alert-dismissible fade show']&quot;}&#10;  (Session info: chrome=117.0.5938.149)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Askars-MacBook-Pro-2.local', ip: '2001:448a:5062:3604:d8f2:1df9:bc25:32e1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/vf/z9ll37j94yj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: bd14160ade8ebfa000e40d3705636cfb&#10;*** Element info: {Using=xpath, value=//div[@class='sufee-alert alert with-close alert-success alert-dismissible fade show']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given The user with "elonmusk@gmail.com" is not in DB.......................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with following fields.............................passed
+Then User should be displayed with the message "Success Registration Successful. Please Login.".failed
+Given the user logged in as "elonmusk@gmail.com" "Tester123"................skipped
+When the user creates a new checking account with the following data........skipped
+Then the user should see the green "Successfully created new Standard Checking account named Elon Musk Second Checking" message.skipped
+And the user should see newly added account card............................skipped
+And the user should see the following transactions..........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='sufee-alert alert with-close alert-success alert-dismissible fade show']"}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Askars-MacBook-Pro-2.local', ip: '2001:448a:5062:3604:d8f2:1df9:bc25:32e1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/vf/z9ll37j94yj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd14160ade8ebfa000e40d3705636cfb
+*** Element info: {Using=xpath, value=//div[@class='sufee-alert alert with-close alert-success alert-dismissible fade show']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.getText(Unknown Source)
+	at co.wedevx.digitalbank.automation.ui.pages.RegistrationPage.getMessage(RegistrationPage.java:185)
+	at co.wedevx.digitalbank.automation.ui.steps.RegistrationSteps.user_should_be_displayed_with_the_message(RegistrationSteps.java:35)
+	at ✽.User should be displayed with the message "Success Registration Successful. Please Login."(classpath:ui/features/checking/NewChecking.feature:9)
+]]></failure>
+    </testcase>
+</testsuite>

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: UiRegressionRunner
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 93.455 s <<< FAILURE! - in UiRegressionRunner
+Create a standard individual checking account  Time elapsed: 25.989 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='sufee-alert alert with-close alert-success alert-dismissible fade show']"}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Askars-MacBook-Pro-2.local', ip: '2001:448a:5062:3604:d8f2:1df9:bc25:32e1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/vf/z9ll37j94yj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd14160ade8ebfa000e40d3705636cfb
+*** Element info: {Using=xpath, value=//div[@class='sufee-alert alert with-close alert-success alert-dismissible fade show']}
+
